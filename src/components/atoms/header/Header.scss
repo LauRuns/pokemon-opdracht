@@ -1,0 +1,23 @@
+@import '../../../styles/2-variables/_variables-index';
+@import '../../../styles/3-globals/_global-index';
+
+.header-container {
+	padding: 0.5rem;
+	font-weight: bold;
+}
+
+.header-center {
+	@extend .center-column;
+}
+
+.header-medium {
+	font-size: 1rem;
+}
+
+.header-large {
+	font-size: 1.4rem;
+}
+
+.header-x-large {
+	font-size: 1.8rem;
+}

@@ -1,0 +1,12 @@
+@import '../../../styles/2-variables/_variables-index';
+
+.card-container {
+	position: relative;
+	margin: 0.5rem;
+	padding: 0.5rem;
+	box-shadow: 5px 18px 19px rgba(0, 0, 0, 0.26);
+	border-radius: 4px;
+	background: $shades-gray-20;
+	display: flex;
+	flex-direction: column;
+}

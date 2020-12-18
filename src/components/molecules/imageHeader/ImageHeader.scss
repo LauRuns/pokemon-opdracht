@@ -1,0 +1,6 @@
+@import '../../../styles/2-variables/_variables-index';
+@import '../../../styles/3-globals/_global-index';
+
+.header-container {
+	@extend .center-column;
+}
