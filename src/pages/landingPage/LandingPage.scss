@@ -1,0 +1,12 @@
+@import '../../styles/2-variables/_variables-index';
+@import '../../styles/3-globals/_global-index';
+
+.landingpage-container {
+	@extend .center-column;
+	padding: 3rem;
+	z-index: 10;
+
+	.pokemon-data-container {
+		@extend .center-row;
+	}
+}

@@ -1,0 +1,60 @@
+@import '../../../styles/2-variables/_variables-index';
+@import '../../../styles/3-globals/_global-index';
+
+.wave-container {
+	.wave {
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		background: url('../../../assets/wave2.png');
+		background-size: 1000px 100px;
+	}
+	.wave1 {
+		animation: animate 10s linear infinite;
+		z-index: 8;
+		opacity: 1;
+		animation-delay: 0s;
+		bottom: 0;
+	}
+	.wave2 {
+		animation: animate2 15s linear infinite;
+		z-index: 7;
+		opacity: 0.5;
+		animation-delay: -5s;
+		bottom: 10px;
+	}
+	.wave3 {
+		animation: animate2 30s linear infinite;
+		z-index: 6;
+		opacity: 0.2;
+		animation-delay: -2s;
+		bottom: 15px;
+	}
+	.wave4 {
+		animation: animate2 5s linear infinite;
+		z-index: 5;
+		opacity: 0.7;
+		animation-delay: -2s;
+		bottom: 20px;
+	}
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0;
+	}
+	100% {
+		background-position: 1000px;
+	}
+}
+
+@keyframes animate2 {
+	0% {
+		background-position: 0;
+	}
+	100% {
+		background-position: -1000px;
+	}
+}

@@ -1,0 +1,11 @@
+@import '../../../styles/2-variables/_variables-index';
+@import '../../../styles/3-globals/_global-index';
+
+.small-card {
+	@extend .center-row;
+	background-color: $shades-gray-40;
+	padding: 0.4rem;
+	width: 100%;
+	border-radius: 3px;
+	margin: 0.2rem;
+}

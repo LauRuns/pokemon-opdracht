@@ -1,12 +1,15 @@
 import React from 'react';
-import './App.css';
+import { Routes } from './routes/Routes';
+import './App.scss';
 
 function App() {
-  return (
-    <div>
-      Begin hier met de opdracht!
-    </div>
-  );
+	return (
+		<>
+			<div className="main-content">
+				<Routes />
+			</div>
+		</>
+	);
 }
 
 export default App;

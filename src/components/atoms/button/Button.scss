@@ -1,0 +1,33 @@
+@import '../../../styles/2-variables/_variables-index';
+
+.button-container {
+	color: #fff;
+	background-color: $pokemon-navy-blue;
+	border-radius: 5px;
+	margin: 0.5rem;
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		cursor: pointer;
+	}
+	&:disabled {
+		cursor: not-allowed;
+		background-color: $shades-gray-40;
+	}
+}
+
+.button--sm {
+	font-size: $default-var * 1.2;
+	padding: 0.8rem;
+}
+
+.button--md {
+	font-size: $default-var * 2;
+	padding: 1rem;
+}
+
+.button--lg {
+	font-size: $default-var * 2.4;
+	padding: 1.2rem;
+}

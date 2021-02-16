@@ -1,0 +1,40 @@
+@import '../../../styles/2-variables/_variables-index';
+@import '../../../styles/3-globals/_global-index';
+
+.spinner__overlay {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(43, 40, 40, 0.9);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+
+	& > p {
+		padding: 0.8rem;
+		color: #fff;
+	}
+}
+
+.spinner {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 5px solid $pokemon-yellow;
+	border-left-color: $pokemon-navy-blue;
+	animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

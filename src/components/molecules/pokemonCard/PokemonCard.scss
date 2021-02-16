@@ -1,0 +1,10 @@
+@import '../../../styles/2-variables/_variables-index';
+@import '../../../styles/3-globals/_global-index';
+
+.pokemon-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 10rem;
+	min-height: 20rem;
+}

@@ -1,0 +1,13 @@
+@import '../../../styles/2-variables/_variables-index';
+@import '../../../styles/3-globals/_global-index';
+
+.pokemon-card-list {
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	// @extend .center-row;
+
+	flex-wrap: wrap;
+}
